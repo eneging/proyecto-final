@@ -1,7 +1,26 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+display: flex;
+ max-height: 100vh;
+ border:solid;
+ min-height: 500px ;
+ height: 100vh;
+ min-width: 320px;
+ 
 }
 
+
+main{
+  
+    display: flex;
+   width: 75%;
+    height: 100%;
+  background-color:   rgb(16, 14, 29)
+    
+}
+
+aside{
+  background-color: rgb(30, 33, 58);
+  width: 25%;
+}

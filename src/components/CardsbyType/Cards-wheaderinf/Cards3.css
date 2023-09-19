@@ -1,0 +1,27 @@
+.container-card-3{
+   
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 26%;
+    height: 100%;
+    flex-direction: column;
+    background-color: rgb(30, 33, 58);
+   
+}
+
+.container-card-3 > div > h3{
+    font-size: 12px;
+  
+    font-weight: 200;
+
+}
+
+
+.container-card-3 > div > h1{
+    font-size: 30px;
+}
+
+
+

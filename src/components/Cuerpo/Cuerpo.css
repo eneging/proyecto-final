@@ -1,0 +1,48 @@
+.card1-container{
+  
+    width: 100%;
+    height: 19%;
+    display: flex;
+    justify-content: center;
+gap: 1.1rem;
+}
+
+.cuerpo{
+ 
+    width: 100%;
+}
+
+.primera-nav{
+  
+    height: 10%;
+}
+
+
+
+
+.card2-container{
+    
+    width: 100%;
+    height: 67.5%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+
+gap: 1.6rem;
+}
+
+.ctn-c2{
+    
+    display: flex;
+    justify-content: center;
+    gap:2rem
+}
+
+.ctn-c3{
+  
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+  
+    height: 20%;
+}

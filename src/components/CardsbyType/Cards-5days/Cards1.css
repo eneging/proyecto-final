@@ -1,0 +1,27 @@
+.container-card-1{
+   
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 9.4%;
+    flex-direction: column;
+    background-color: rgb(30, 33, 58);
+   
+}
+
+.container-card-1 > h3{
+    font-size: 11px;
+}
+
+
+.container-card-1 > img {
+    width: 50px ;
+    
+    
+}
+
+.Temperatura{gap:1rem;
+    display:flex;
+    font-size: 10px;
+
+}
