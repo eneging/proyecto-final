@@ -13,12 +13,21 @@ gap: 1.1rem;
 }
 
 .primera-nav{
-  
+  display: flex;
+  gap: 1rem;
     height: 10%;
+    justify-content: end;
+height: 6.5%;
+
+  margin: 1rem;
 }
 
 
+.primera-nav > button{
+border-radius: 100%;
+background-color: rgb(88, 86, 118);
 
+}
 
 .card2-container{
     
@@ -31,8 +40,16 @@ gap: 1.1rem;
 gap: 1.6rem;
 }
 
+.card2-container > h2 {
+   
+  padding-left: 14rem;
+ font-size: 18px;
+position: relative;
+top:2rem
+}
+
 .ctn-c2{
-    
+  
     display: flex;
     justify-content: center;
     gap:2rem
