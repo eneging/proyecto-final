@@ -7,14 +7,15 @@ import "./Cuerpo.css"
 function Cuerpo() {
   return (
     <div className="cuerpo">
-        <div className="primera-nav">aqui el nav</div>
+        <div className="primera-nav"><button>C</button><button>F</button></div>
         <div className="card1-container">
      <Cards1/><Cards1/><Cards1/><Cards1/><Cards1/>
      </div>
 
      <div className="card2-container">
-        <h2>Today Highltd</h2>
+     <h2>Today Highltd</h2>
     <div className="ctn-c2">
+   
      <Cards2></Cards2> <Cards2></Cards2>
     
      </div>

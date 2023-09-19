@@ -1,20 +1,32 @@
+
+import { useState } from "react"
 import "./Modal.css"
 import nubesNav from '../weather-app-master/Cloud-background.png'
 import Nube from "../weather-app-master/HeavyRain.png"
 function modal() {
-  return (
-    <div className="container-modals">
-      <div className="modal">
-              <button>X</button>
+
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const [mostrar, setMostrar] = useState(false) 
+   
+
+
+  return ( 
+ 
+     <div className="container-modals">
+     {mostrar ? <div className="modal">
+              <button onClick={() => setMostrar(false)} >X</button>
         <div> <div><input type="text" placeholder="busca">
           </input> <button>search</button></div> </div>
-      </div>
+      </div> :null}
 
-      <div className="nav"><img src={nubesNav}></img>
+   <div className="nav"><img src={nubesNav}></img>
 
       
-      <div className="elements-nav"><div><button >search for places</button> 
-     <i>navegar</i></div>
+      <div className="elements-nav"><div><button onClick={() => (setMostrar(true))} >search for places</button> 
+     <button><span className="material-symbols-outlined">
+my_location
+</span></button></div>
      
       <img src={Nube}></img>
       <h1>15C</h1>
@@ -24,8 +36,10 @@ function modal() {
       <h4>country</h4>
       
       </div>
-      </div>
+      </div> 
     </div>
+
+
   )
 }
 
