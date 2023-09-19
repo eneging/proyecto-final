@@ -33,7 +33,9 @@ my_location
       <h3>shower</h3>
       <div><h4>
         today .</h4><h4>  fri 5 jun</h4> </div>
-      <h4>country</h4>
+      <h4><span className="material-symbols-outlined">
+location_on
+</span>country</h4>
       
       </div>
       </div> 
