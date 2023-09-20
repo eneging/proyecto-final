@@ -12,7 +12,7 @@ display: flex;
 
 
 main{
-  
+
     display: flex;
    width: 75%;
     height: 100%;
@@ -23,4 +23,9 @@ main{
 aside{
   background-color: rgb(30, 33, 58);
   width: 25%;
+}
+
+#botoncito{
+
+  font-size: 100xp color red;
 }
