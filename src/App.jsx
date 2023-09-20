@@ -15,10 +15,24 @@ function App() {
   const [latitude,setLatitude] = React.useState('')
   const [longitude,setLongitude] = React.useState('')
   const [citys, setCitys] = React.useState({})
+  const [CiudadInput, setCiudadInput] = useState('ica')
 
-  const city = `ica`
+  
+  
+  const city = `${CiudadInput}`
   const API = "6f812ee6ec66dcb7e2cc4147aad465c1"
+
+
+  const addData = (misData) => {
+    
+    
+   setCiudadInput(misData);
+
+  }
+
+
  
+
 
   useEffect(() => {
     const getData = async () => {
@@ -33,7 +47,7 @@ function App() {
     };
 
     getData();
-  }, []);
+  }, [CiudadInput]);
 
 
 
@@ -61,9 +75,12 @@ const celcius = 273.15;
 
   return (
     <>
+
+
+   
   
   {data.city && data.list && data.list[0] ? (
-     <><aside> <Modal country={data.city} 
+     <><aside> <Modal  onSubmit={addData}    country={data.city} 
      
           temperatura={Math.trunc(data.list[0].main.temp-celcius)}
           clima ={data.list[0].weather[0].main} 
