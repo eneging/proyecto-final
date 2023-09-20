@@ -1,11 +1,11 @@
 
 
-function Cards4() {
+function Cards4({presure}) {
   return (
     <div className="container-card-3">
     <div>
  <h3> air pressure</h3>
- <h1>gfff</h1>
+ <h1>{presure} mb</h1>
  </div>
  
 

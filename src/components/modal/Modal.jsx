@@ -2,13 +2,15 @@
 import { useState } from "react"
 import "./Modal.css"
 import nubesNav from '../weather-app-master/Cloud-background.png'
-import Nube from "../weather-app-master/HeavyRain.png"
-function modal() {
 
+
+
+function modal({country,temperatura ,clima, img, fecha}) {
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [mostrar, setMostrar] = useState(false) 
    
+
 
 
   return ( 
@@ -28,14 +30,14 @@ function modal() {
 my_location
 </span></button></div>
      
-      <img src={Nube}></img>
-      <h1>15C</h1>
-      <h3>shower</h3>
+      <img src={`https://openweathermap.org/img/wn/${img}@2x.png`}></img>
+      <h1>{temperatura}°C</h1>
+      <h3>{clima}</h3>
       <div><h4>
-        today .</h4><h4>  fri 5 jun</h4> </div>
-      <h4><span className="material-symbols-outlined">
+        today .</h4><h4>  {fecha}</h4> </div>
+      <h4> <span className="material-symbols-outlined" >
 location_on
-</span>country</h4>
+</span>{country?.name}</h4>
       
       </div>
       </div> 

@@ -52,7 +52,8 @@ top:2rem
   
     display: flex;
     justify-content: center;
-    gap:2rem
+    gap:2rem;
+    
 }
 
 .ctn-c3{

@@ -2,13 +2,85 @@
 import Modal from './components/modal/Modal'
 import './App.css'
 import Cuerpo from './components/Cuerpo/Cuerpo'
+import { useEffect, useState } from 'react'
 
 function App() {
-  
+
+
+  const [data, setData] = useState([])
+
+  const city = "bogota"
+  const API = "6f812ee6ec66dcb7e2cc4147aad465c1"
+
+  useEffect(() => {
+    const getData = async () => {
+      try {
+        const res = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API}`);
+        const datos = await res.json();
+        setData(datos); // Actualiza el estado con los datos
+        localStorage.setItem('Datitos', JSON.stringify(datos)); // Guarda los datos en localStorage
+      } catch (error) {
+        console.error("Error al obtener los datos:", error);
+      }
+    };
+
+    getData();
+  }, []);
+
+
+
+
+
   return (
     <>
-      <aside><Modal></Modal></aside>
-      <main><Cuerpo></Cuerpo> </main>
+    
+  
+  {data.city && data.list && data.list[0] ? (
+     <><aside> <Modal country={data.city} 
+     fecha ={(data.list[0].dt_txt).substr(0, 10 )} 
+          temperatura={Math.trunc(data.list[0].main.temp-273.15)}
+          clima ={data.list[0].weather[0].main} 
+           img={data.list[0].weather[0].icon}
+          /></aside>
+
+       <main><Cuerpo 
+                     
+                    humedad ={data.list[0].main.humidity} 
+                    viento ={data.list[0].wind.speed}
+                    presion ={data.list[0].main.pressure}
+                    fell ={Math.trunc(data.list[0].main.feels_like-273.15)}
+                    
+                    // props de la primera card-1
+                     img1 ={data.list[3].weather[0].icon} 
+                    max1={Math.trunc(data.list[3].main.temp_min-273.15)}
+                    min1={Math.trunc(data.list[3].main.temp_max-273.15)}
+                     // props de la primera card-2
+                     img2 ={data.list[6].weather[0].icon} 
+                     max2={Math.trunc(data.list[6].main.temp_min-273.15)}
+                     min2={Math.trunc(data.list[6].main.temp_max-273.15)}
+                     // props de la primera card-3
+                     img3 ={data.list[9].weather[0].icon}
+                     max3={Math.trunc(data.list[9].main.temp_min-273.15)}
+                     min3={Math.trunc(data.list[9].main.temp_max-273.15)}
+                      // props de la primera card-4
+                      img4 ={data.list[12].weather[0].icon} 
+                      max4={Math.trunc(data.list[12].main.temp_min-273.15)}
+                      min4={Math.trunc(data.list[12].main.temp_max-273.15)}
+                       // props de la primera card-5
+                     img5 ={data.list[15].weather[0].icon}
+                     max5={Math.trunc(data.list[15].main.temp_min-273.15)}
+                     min5={Math.trunc(data.list[15].main.temp_max-273.15)}  
+                    
+                    ></Cuerpo> </main>
+
+</>
+
+  ) : (
+    <p>Cargando datos...</p>
+  )}
+
+                                
+      
     </>
   )
 }

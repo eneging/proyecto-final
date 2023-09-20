@@ -11,17 +11,17 @@
 
 .container-card-2 > h3{
     font-size: 11px;
+    
 }
 
 
 .container-card-2 > img {
     width: 50px ;
     
-    
 }
 
 .Temperatura{gap:1rem;
     display:flex;
     font-size: 10px;
-
+    
 }
