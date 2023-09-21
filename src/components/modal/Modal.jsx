@@ -16,6 +16,7 @@ function modal({ country, temperatura, clima, img, onSubmit, onSubmit2 }) {
   const ciudades = ["london", "barcelona", "long beach"]
 
 
+
   const handleChange = (e) => {
 
     setInputDato(e.target.value);
@@ -30,23 +31,50 @@ function modal({ country, temperatura, clima, img, onSubmit, onSubmit2 }) {
   const handleSubmit2 = (e) => {
     e.preventDefault();
     onSubmit2(inputDato);
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+
+
+      }
+    })
+
+    Toast.fire({
+      icon: 'success',
+      title: 'Signed in successfully'
+
+    })
+
+
+
+
+
+
+
   }
 
   const handleCiudad1 = () => {
 
     setInputDato(ciudades[0]);
   }
-  
+
   const handleCiudad2 = () => {
 
     setInputDato(ciudades[1]);
   }
-  
+
   const handleCiudad3 = () => {
 
     setInputDato(ciudades[2]);
   }
-  
+
+
 
 
 

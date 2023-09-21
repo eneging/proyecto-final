@@ -31,7 +31,8 @@ function Cuerpo({ humedad, viento, presion, fell,
  
   return (
     <div className="cuerpo">
-  
+    
+
 <heck></heck>
       <div className="primera-nav"><button  >°C</button><button >°F</button></div>
 
