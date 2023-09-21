@@ -3,7 +3,6 @@ import Modal from './components/modal/Modal'
 import './App.css'
 import Cuerpo from './components/Cuerpo/Cuerpo'
 import React, { useEffect, useState } from 'react'
-import axios from 'axios'
 
 
 function App() {
@@ -71,9 +70,9 @@ setLongitude(position.coords.longitude);
   setCitys(response?.data.name)
 })
 
-}, [])
+}, [citys])
 
-
+console.log(citys)
 
 
 const celcius = 273.15;
