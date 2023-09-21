@@ -6,6 +6,9 @@ export default function CardsP({wind}) {
          <div>
       <h3> Wind status</h3>
       <h1>{wind} mph</h1>
+      <span id="navigation" className="material-symbols-outlined">
+navigation
+</span>
       </div>
       
 

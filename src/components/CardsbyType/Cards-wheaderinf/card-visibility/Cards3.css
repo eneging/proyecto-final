@@ -1,6 +1,6 @@
 .container-card-3{
    
-
+    
     justify-content: center;
     align-items: center;
     display: flex;
@@ -9,19 +9,37 @@
     flex-direction: column;
     background-color: rgb(30, 33, 58);
    
+   text-align: center;
 }
 
 .container-card-3 > div > h3{
-    font-size: 12px;
-  
+    font-size: 15px;
+  position: relative;
+  top:1rem;
     font-weight: 200;
 
 }
 
-
-.container-card-3 > div > h1{
-    font-size: 30px;
+.container-card-3 > div {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
+.container-card-3 > div > h1{
+    font-size: 35px;
+}
 
+#navigation {
+    font-size: 20px;
+    background-color: rgb(63, 66, 87);
+    border-radius: 100%;
+    transform: rotate(-150deg);
+    padding:5px;
+    position: relative;
+    top:-1rem
+    
+}

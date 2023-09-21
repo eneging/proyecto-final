@@ -37,7 +37,7 @@ background-color: rgb(88, 86, 118);
     justify-content: start;
     flex-direction: column;
 
-gap: 1.6rem;
+gap: 2.5rem;
 }
 
 .card2-container > h2 {

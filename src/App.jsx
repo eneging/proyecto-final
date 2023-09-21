@@ -31,6 +31,12 @@ function App() {
   }
 
 
+ const addGPS = () => {
+
+setCiudadInput(citys);
+
+ }  
+
 
 
   useEffect(() => {
@@ -79,7 +85,7 @@ const celcius = 273.15;
    
   
   {data.city && data.list && data.list[0] ? (
-     <><aside> <Modal  onSubmit={addData}    country={data.city} 
+     <><aside> <Modal  onSubmit={addData} onSubmit2={addGPS}   country={data.city} 
      
           temperatura={Math.trunc(data.list[0].main.temp-celcius)}
           clima ={data.list[0].weather[0].main} 

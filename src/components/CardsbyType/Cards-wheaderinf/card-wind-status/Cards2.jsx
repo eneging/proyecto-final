@@ -8,7 +8,7 @@ function Cards2({hum}) {
 
       <h3> Humidity</h3>
       <h1>{hum}%</h1>
-  
+        
 <Progres porciento={hum}> </Progres>
     </div>
   )
