@@ -5,7 +5,7 @@ export default function CardsP({wind}) {
     <div className="container-card-3">
          <div>
       <h3> Wind status</h3>
-      <h1>{wind} mph</h1>
+      <div><h1>{wind} <h2>mph</h2></h1></div>
       <span id="navigation" className="material-symbols-outlined">
 navigation
 </span>

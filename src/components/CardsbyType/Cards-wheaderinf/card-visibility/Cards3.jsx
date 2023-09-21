@@ -4,8 +4,8 @@ function Cards3({felLike}) {
   return (
     <div className="container-card-3">
          <div>
-      <h3> vissibility</h3>
-      <h1>{felLike}°C</h1>
+      <h3> Vissibility</h3>
+     <div> <h1>{felLike} <h2>°C</h2></h1></div>
       </div>
       
 

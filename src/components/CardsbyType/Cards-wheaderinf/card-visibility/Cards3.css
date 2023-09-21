@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 26%;
+    width: 28%;
     height: 100%;
     flex-direction: column;
     background-color: rgb(30, 33, 58);
@@ -13,11 +13,11 @@
 }
 
 .container-card-3 > div > h3{
-    font-size: 15px;
+    font-size: 16px;
   position: relative;
   top:1rem;
     font-weight: 200;
-
+   
 }
 
 .container-card-3 > div {
@@ -30,8 +30,39 @@
 
 
 .container-card-3 > div > h1{
-    font-size: 35px;
+    
+
+        font-size: 25px;
+      font-size: 1.3rem;
+        display: flex;
+        align-items: end;
+        font-weight: 200;
+       
+    
 }
+
+
+.container-card-3 > div > div > h1{
+    
+
+    font-size: 26px;
+  font-size: 1.3rem;
+    display: flex;
+     width: 5vw;  
+     align-items: start;
+     height: 2vw;
+     font-size: 30px;
+     justify-content: center;
+    
+}
+
+.container-card-3 > div > div > h1>h2{
+
+  
+font-size: 16px;
+font-weight: 200;
+}
+
 
 #navigation {
     font-size: 20px;
@@ -40,6 +71,10 @@
     transform: rotate(-150deg);
     padding:5px;
     position: relative;
-    top:-1rem
     
+    
+}
+
+#navigation:hover{
+    background-color: rgb(9, 173, 210);
 }

@@ -83,11 +83,11 @@ function modal({ country, temperatura, clima, img, onSubmit, onSubmit2 }) {
       <div className="nav"><img src={nubesNav}></img>
 
 
-        <div className="elements-nav"><div><button onClick={() => (setMostrar(true))} >search for places</button>
+        <div className="elements-nav"><div><button id="btn-search-nav" onClick={() => (setMostrar(true))} >search for places</button>
 
 
           <form onSubmit={handleSubmit2}>
-            <button ><span className="material-symbols-outlined">
+            <button className="btn-gps"><span className="material-symbols-outlined">
               my_location
             </span></button>
           </form>
@@ -97,11 +97,12 @@ function modal({ country, temperatura, clima, img, onSubmit, onSubmit2 }) {
         </div>
 
           <img className="nube" src={`https://openweathermap.org/img/wn/${img}@2x.png`}></img>
-          <h1>{temperatura}°C</h1>
-          <h3>{clima}</h3>
+
+          <div className="nav-Temperatura-titulo"><h1>{temperatura}<h2>°C</h2></h1></div>
+          <h3 className="clima-titulo">{clima}</h3>
           <div><h4>
-            today .</h4><h4> {new Date().toLocaleDateString()}</h4> </div>
-          <h4> <span className="material-symbols-outlined" >
+            today .</h4><h4> {new Date().toLocaleDateString("en-US", { weekday: "short", day: "numeric", month: "short" })}</h4> </div>
+          <h4> <span id="location" className="material-symbols-outlined" >
             location_on
           </span>{country?.name}</h4>
 

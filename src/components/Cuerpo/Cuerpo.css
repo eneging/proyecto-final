@@ -4,29 +4,34 @@
     height: 19%;
     display: flex;
     justify-content: center;
-gap: 1.1rem;
+gap: 1.6rem;
+
 }
 
 .cuerpo{
  
     width: 100%;
+   
 }
 
 .primera-nav{
   display: flex;
   gap: 1rem;
-    height: 10%;
+    width: 83%;
     justify-content: end;
 height: 6.5%;
-
-  margin: 1rem;
+  
+  margin: 0.5rem;
 }
 
-
+/* aqui es */
 .primera-nav > button{
 border-radius: 100%;
 background-color: rgb(88, 86, 118);
-
+width: 3rem;
+display: flex;
+justify-content: center;
+display: none;
 }
 
 .card2-container{
@@ -42,17 +47,17 @@ gap: 2.5rem;
 
 .card2-container > h2 {
    
-  padding-left: 14rem;
+  padding-left: 12rem;
  font-size: 18px;
 position: relative;
 top:2rem
 }
 
 .ctn-c2{
-  
+    
     display: flex;
     justify-content: center;
-    gap:2rem;
+    gap:2.5rem;
     
 }
 
@@ -60,7 +65,7 @@ top:2rem
   
     display: flex;
     justify-content: center;
-    gap:2rem;
+    gap:3rem;
   
     height: 20%;
 }

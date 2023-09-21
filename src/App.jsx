@@ -5,6 +5,7 @@ import Cuerpo from './components/Cuerpo/Cuerpo'
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 
+
 function App() {
 
 
@@ -76,7 +77,7 @@ setLongitude(position.coords.longitude);
 
 
 const celcius = 273.15;
-
+ 
 
   return (
     <>
@@ -98,32 +99,53 @@ const celcius = 273.15;
                     viento ={data.list[0].wind.speed}
                     presion ={data.list[0].main.pressure}
                     fell ={Math.trunc(data.list[0].main.feels_like-273.15)}
+
+
                     
                     // props de la primera card-1
                     
                      img1 ={data.list[6].weather[0].icon} 
-                    max1={Math.trunc(data.list[6].main.temp_min-273.15)}
-                    min1={Math.trunc(data.list[6].main.temp_max-273.15)}
-                     // props de la primera card-2
+                    max1Centigrados={Math.trunc(data.list[6].main.temp_min-celcius)}
+                    min1Centigrados={Math.trunc(data.list[6].main.temp_max-celcius)}
+                    max1Faren={Math.trunc((data.list[6].main.temp_min-celcius) * 9/5 + 32)}
+                    min1Faren={Math.trunc((data.list[6].main.temp_max-celcius) * 9/5 + 32 )}
+
+                    
+                    // props de la primera card-2
                      fecha2 ={(data.list[16].dt_txt).substr(0, 10 )} 
                      img2 ={data.list[16].weather[0].icon} 
-                     max2={Math.trunc(data.list[16].main.temp_min-273.15)}
-                     min2={Math.trunc(data.list[16].main.temp_max-273.15)}
-                     // props de la primera card-3
+                     max2Centigrados={Math.trunc(data.list[16].main.temp_min-273.15)}
+                     min2Centigrados={Math.trunc(data.list[16].main.temp_max-273.15)}
+                     max2Faren={Math.trunc((data.list[16].main.temp_min-celcius) * 9/5 + 32)}
+                    min2Faren={Math.trunc((data.list[16].main.temp_max-celcius) * 9/5 + 32 )}
+                    
+                    
+                    // props de la primera card-3
                      fecha3 ={(data.list[21].dt_txt).substr(0, 10 )} 
                      img3 ={data.list[21].weather[0].icon}
-                     max3={Math.trunc(data.list[21].main.temp_min-273.15)}
-                     min3={Math.trunc(data.list[21].main.temp_max-273.15)}
-                      // props de la primera card-4
+                     max3Centigrados={Math.trunc(data.list[21].main.temp_min-273.15)}
+                     min3Centigrados={Math.trunc(data.list[21].main.temp_max-273.15)}
+                     max3Faren={Math.trunc((data.list[21].main.temp_min-celcius) * 9/5 + 32)}
+                    min3Faren={Math.trunc((data.list[21].main.temp_max-celcius) * 9/5 + 32 )}
+                    
+                    
+                    
+                    // props de la primera card-4
                       fecha4 ={(data.list[30].dt_txt).substr(0, 10 )} 
                       img4 ={data.list[30].weather[0].icon} 
-                      max4={Math.trunc(data.list[30].main.temp_min-273.15)}
-                      min4={Math.trunc(data.list[30].main.temp_max-273.15)}
+                      max4Centigrados={Math.trunc(data.list[30].main.temp_min-273.15)}
+                      min4Centigrados={Math.trunc(data.list[30].main.temp_max-273.15)}
+                      max4Faren={Math.trunc((data.list[30].main.temp_min-celcius) * 9/5 + 32)}
+                    min4Faren={Math.trunc((data.list[30].main.temp_max-celcius) * 9/5 + 32 )}
+
+
                        // props de la primera card-5
                        fecha5 ={(data.list[38].dt_txt).substr(0, 10 )} 
-                     img5 ={data.list[35].weather[0].icon}
-                     max5={Math.trunc(data.list[38].main.temp_min-273.15)}
-                     min5={Math.trunc(data.list[38].main.temp_max-273.15)}  
+                     img5 ={data.list[38].weather[0].icon}
+                     max5Centigrados={Math.trunc(data.list[38].main.temp_min-273.15)}
+                     min5Centigrados={Math.trunc(data.list[38].main.temp_max-273.15)} 
+                     max5Faren={Math.trunc((data.list[38].main.temp_min-celcius) * 9/5 + 32)}
+                    min5Faren={Math.trunc((data.list[38].main.temp_max-celcius) * 9/5 + 32 )} 
                     
                     ></Cuerpo> </main>
 
