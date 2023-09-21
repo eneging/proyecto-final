@@ -72,8 +72,6 @@ setLongitude(position.coords.longitude);
 
 }, [citys])
 
-console.log(citys)
-
 
 const celcius = 273.15;
  
