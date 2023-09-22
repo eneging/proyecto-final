@@ -1,5 +1,5 @@
 
-import Cards1 from "../CardsbyType/Cards-5days/Cards1"
+
 import Cards2 from "../CardsbyType/Cards-wheaderinf/card-wind-status/Cards2"
 import Cards3 from "../CardsbyType/Cards-wheaderinf/card-visibility/Cards3"
 import CardsP from "../CardsbyType/Cards-wheaderinf/card-porciento/CardsP"
@@ -8,27 +8,18 @@ import "./Cuerpo.css"
 import Cards4 from "../CardsbyType/Cards-wheaderinf/card-air-pressure/Cards4"
 
 
-
+import '../CardsbyType/Cards-5days/cards1.css'
 
 
 
 
 
 function Cuerpo({ humedad, viento, presion, fell,
-  img1, min1Centigrados, max1Centigrados,
-  img2, min2Centigrados, max2Centigrados, fecha2,
-  img3, min3Centigrados, max3Centigrados, fecha3,
-  img4, min4Centigrados, max4Centigrados, fecha4,
-  img5, min5Centigrados, max5Centigrados, fecha5 }) {
-
-
-
-    
-   
-
-
-
  
+  misDatosCard1  }) {
+
+    console.log(misDatosCard1)
+
   return (
     <div className="cuerpo">
     
@@ -39,13 +30,29 @@ function Cuerpo({ humedad, viento, presion, fell,
 
 
       <div className="card1-container">
-        <Cards1 dia={"tomorrow"} tempMin={min1Centigrados}  tempMax={max1Centigrados} imgCard1={img1} />
-        <Cards1 dia={fecha2} tempMin={min2Centigrados} tempMax={max2Centigrados} imgCard1={img2} />
-        <Cards1 dia={fecha3} tempMin={min3Centigrados} tempMax={max3Centigrados} imgCard1={img3} />
-        <Cards1 dia={fecha4} tempMin={min4Centigrados} tempMax={max4Centigrados} imgCard1={img4} />
-        <Cards1 dia={fecha5} tempMin={min5Centigrados} tempMax={max5Centigrados} imgCard1={img5} />
+     
+    <div  className="container-card-1">
 
-      </div>
+
+    {misDatosCard1?.filter((e) => e.dt_txt.includes("03:00:00")).map((e,i) => {
+
+return(
+
+<div   className="cartas" id={`class-${i}`} key={i}>
+    <h3>{e.dt_txt.substr(0, 10)}</h3>
+    <img   src={`https://openweathermap.org/img/wn/${e.weather[0].icon}@2x.png`}></img>
+    <div className="Temperatura"> <h3>{Math.trunc(e.main.temp_max - 273.15)}<h4>°C</h4></h3>
+    <h3>{Math.trunc(e.main.temp_min - 273.15)}<h4>°C</h4></h3> </div>
+    </div>
+    )
+})}
+
+
+  </div> 
+  </div>
+   
+
+      
       <div className="card2-container">
         <h2>Today’s Hightlights</h2>
         <div className="ctn-c2">
