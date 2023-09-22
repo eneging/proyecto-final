@@ -4,18 +4,11 @@ import "./Modal.css"
 import nubesNav from '../weather-app-master/Cloud-background.png'
 
 
-
-function modal({ country, temperatura, clima, img, onSubmit, onSubmit2 }) {
-
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+function modal({ country, temperatura, clima, img, onSubmit, onSubmit2 }) { // eslint-disable-next-line react-hooks/rules-of-hooks
   const [mostrar, setMostrar] = useState(false)
-
-
   const [inputDato, setInputDato] = useState('');
 
   const ciudades = ["london", "barcelona", "long beach"]
-
-
 
   const handleChange = (e) => {
 
@@ -52,11 +45,6 @@ function modal({ country, temperatura, clima, img, onSubmit, onSubmit2 }) {
     })
 
 
-
-
-
-
-
   }
 
   const handleCiudad1 = () => {
@@ -76,11 +64,9 @@ function modal({ country, temperatura, clima, img, onSubmit, onSubmit2 }) {
 
 
 
-
-
   return (
 
-   
+
     <div className="container-modals">
       {mostrar ? <div className="modal">
         <button onClick={() => setMostrar(false)} ><span className="material-symbols-outlined">
@@ -120,8 +106,6 @@ function modal({ country, temperatura, clima, img, onSubmit, onSubmit2 }) {
             </span></button>
           </form>
 
-
-
         </div>
 
           <img className="nube" src={`https://openweathermap.org/img/wn/${img}@2x.png`}></img>
@@ -129,7 +113,7 @@ function modal({ country, temperatura, clima, img, onSubmit, onSubmit2 }) {
           <div className="nav-Temperatura-titulo"><h1>{temperatura}<h2>°C</h2></h1></div>
           <h3 className="clima-titulo">{clima}</h3>
           <div><h4>
-            today .</h4><h4> {new Date().toLocaleDateString("en-US", { weekday: "short", day: "numeric", month: "short" })}</h4> </div>
+            Today .</h4><h4> {new Date().toLocaleDateString("en-US", { weekday: "short", day: "numeric", month: "short" })}</h4> </div>
           <h4> <span id="location" className="material-symbols-outlined" >
             location_on
           </span>{country?.name}</h4>
@@ -139,7 +123,7 @@ function modal({ country, temperatura, clima, img, onSubmit, onSubmit2 }) {
       </div>
     </div>
 
-    
+
   )
 }
 

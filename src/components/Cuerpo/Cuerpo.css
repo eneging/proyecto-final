@@ -35,8 +35,17 @@ background-color: rgb(88, 86, 118);
 width: 3rem;
 display: flex;
 justify-content: center;
+align-items: center;
+
 
 }
+
+.primera-nav >button:hover{
+    background-color: rgb(43, 44, 45);
+    font-weight: 800;
+}
+
+
 
 .card2-container{
     
@@ -95,3 +104,4 @@ top:2rem
     background-color: rgb(30, 33, 58);
     height: 8vw;
 }
+
