@@ -8,7 +8,7 @@ import "./Cuerpo.css"
 import Cards4 from "../CardsbyType/Cards-wheaderinf/card-air-pressure/Cards4"
 
 
-import '../CardsbyType/Cards-5days/cards1.css'
+import './Cards1.css'
 
 
 
