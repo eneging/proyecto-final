@@ -80,7 +80,7 @@ function modal({ country, temperatura, clima, img, onSubmit, onSubmit2 }) {
 
   return (
 
-
+   
     <div className="container-modals">
       {mostrar ? <div className="modal">
         <button onClick={() => setMostrar(false)} ><span className="material-symbols-outlined">
@@ -139,7 +139,7 @@ function modal({ country, temperatura, clima, img, onSubmit, onSubmit2 }) {
       </div>
     </div>
 
-
+    
   )
 }
 
