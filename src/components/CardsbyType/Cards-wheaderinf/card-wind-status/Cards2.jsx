@@ -1,5 +1,5 @@
 import './Cards2.css'
-import Progres from '../../hooks/progres'
+import Progres from './Progres'
 function Cards2({hum}) {
 
   

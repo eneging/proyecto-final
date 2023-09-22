@@ -35,7 +35,7 @@ background-color: rgb(88, 86, 118);
 width: 3rem;
 display: flex;
 justify-content: center;
-display: none;
+
 }
 
 .card2-container{
@@ -88,4 +88,10 @@ top:2rem
 .cartas > img {
    
     width: 50px;
+}
+
+.form-time{
+    z-index: 999;
+    background-color: rgb(30, 33, 58);
+    height: 8vw;
 }
