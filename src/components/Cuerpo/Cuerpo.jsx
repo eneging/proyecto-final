@@ -34,7 +34,7 @@ function Cuerpo({ humedad, viento, presion, fell,
     <div  className="container-card-1">
 
 
-    {misDatosCard1?.filter((e) => e.dt_txt.includes("03:00:00")).map((e,i) => {
+    {misDatosCard1?.filter((e) => e.dt_txt.includes("12:00:00")).map((e,i) => {
 
 return(
 
