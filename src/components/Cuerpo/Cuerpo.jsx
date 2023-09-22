@@ -18,7 +18,7 @@ function Cuerpo({ humedad, viento, presion, fell,
  
   misDatosCard1  }) {
 
-    console.log(misDatosCard1)
+   
 
   return (
     <div className="cuerpo">
