@@ -60,7 +60,10 @@ function App() {
   const celcius = 273.15;
 
   return (
-    <>   {data.city && data.list && data.list[0] ? (
+    <>  
+    
+    
+     {data.city && data.list && data.list[0] ? (
         <>
           <aside>
 

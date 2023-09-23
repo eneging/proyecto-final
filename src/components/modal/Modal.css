@@ -103,6 +103,7 @@ object-fit:cover;
     height: 5vw;
     justify-content: center;
     align-items: center;
+    
 }
 
 .nav-Temperatura-titulo > h1 >h2{
@@ -112,6 +113,7 @@ object-fit:cover;
     display: flex;
     align-items: end;
     font-weight: 200;
+    
 }
 
 
