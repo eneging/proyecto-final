@@ -9,6 +9,7 @@
 form > div{
  display: flex;
  gap:1.5rem;
+ 
  margin-bottom:  3rem;
 }
 .modal{
@@ -32,14 +33,14 @@ flex-direction: column;
     width: 3rem;
     position: relative;
     left: 40%;
-    
+
     background-color:rgb(30, 33, 58) ;
     
 }
 
 .Btn-Search{
     border: none;
-    height: 2.4vw;
+    height: 5.5vh;
    font-size: 13px;
     border-radius: 1px;
     background-color: rgb(60, 71, 233);
@@ -49,7 +50,7 @@ flex-direction: column;
 input{
 
    
-    height: 2vw;
+    height: 4.5vh;
 
 }
 
@@ -103,20 +104,22 @@ object-fit:cover;
     height: 5vw;
     justify-content: center;
     align-items: center;
+    
 }
 
 .nav-Temperatura-titulo > h1 >h2{
- 
+    
     font-size: 25px;
     height: 100%;
     display: flex;
     align-items: end;
     font-weight: 200;
+    
 }
 
 
 .elements-nav{
-    
+   
     display: flex
     ; flex-direction: column;
 justify-content: center;
@@ -174,12 +177,12 @@ cursor: pointer;
 
 
 .container-btn-3{
-
+  
   
     display: flex;
      flex-direction: column;
    
-    height: 28vw;
+    height: 28%;
     
    align-items: center;
 
@@ -202,7 +205,6 @@ cursor: pointer;
     align-items: center;
     border-radius: 100%;
     height: 3vw;
-    
     width: 3vw;
 }
 
@@ -232,4 +234,40 @@ cursor: pointer;
 
     color: brown;
     cursor: pointer;
+}
+
+
+@media (max-width:500px) {
+
+.nav{
+
+    height: 200vw;
+    align-items: center;
+    
+}
+
+
+
+.elements-nav{
+    width: 100%;
+}
+   
+
+
+
+.btn-gps{
+
+    height: 10vw;
+
+
+}
+
+
+.modal{
+
+  
+    width: 100%;
+}
+
+
 }

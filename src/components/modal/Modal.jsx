@@ -5,6 +5,7 @@ import nubesNav from '../weather-app-master/Cloud-background.png'
 
 
 function modal({ country, temperatura, clima, img, onSubmit, onSubmit2 }) { // eslint-disable-next-line react-hooks/rules-of-hooks
+  
   const [mostrar, setMostrar] = useState(false)
   const [inputDato, setInputDato] = useState('');
 

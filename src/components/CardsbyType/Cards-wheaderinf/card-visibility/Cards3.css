@@ -82,3 +82,14 @@ font-weight: 200;
 #navigation:hover{
     background-color: rgb(9, 173, 210);
 }
+
+
+@media (max-width:500px){
+
+  .container-card-3{
+
+    
+    width: 70%;
+  }
+
+}

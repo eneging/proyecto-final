@@ -1,4 +1,4 @@
-
+import "./Cardsp.css"
 
 export default function CardsP({wind}) {
   return (
