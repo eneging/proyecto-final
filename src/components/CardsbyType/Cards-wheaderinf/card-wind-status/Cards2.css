@@ -77,3 +77,14 @@
     align-items: end;
     font-weight: 200;
 }
+
+
+@media (max-width:500px){
+
+    .container-card-2{
+       
+        width: 70%;
+    
+    }
+
+}

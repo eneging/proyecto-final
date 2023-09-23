@@ -55,15 +55,22 @@ align-items: center;
     justify-content: start;
     flex-direction: column;
 
-gap: 2.5rem;
+gap: 2rem;
 }
 
-.card2-container > h2 {
+.card2-container > div {
    
-  padding-left: 12rem;
- font-size: 18px;
+ font-size: 16px;
 position: relative;
-top:2rem
+top: 3vh;
+
+}
+
+.card2-container > div >h2{
+
+    font-size: 1.1rem;
+    position: relative;
+    left: 12vw;
 }
 
 .ctn-c2{
@@ -84,7 +91,7 @@ top:2rem
 }
 
 .cartas{
-   
+ 
     height: 9vw;
     
 }
@@ -105,3 +112,64 @@ top:2rem
     height: 8vw;
 }
 
+
+@media (max-width:500px){
+
+
+    .cuerpo{
+
+
+        height: 300vh;
+    }
+    .primera-nav{
+        height: 1.6%;
+        padding: 1rem;
+    }
+
+    .card1-container{
+       
+        height: 90vh;
+    
+    }
+
+    .card2-container{
+  
+  
+     position: relative;
+     top: 4rem;
+     height: 180vh;
+    }
+
+    .card2-container > h2{
+
+         
+         display: flex;
+         position: relative;
+         width: 20%;
+     
+
+    }
+
+    .ctn-c2{
+      
+        flex-direction: column;
+        align-items: center;
+        height: 70vh;
+        
+        
+    }
+
+
+    .ctn-c3{
+     
+
+       height: 50vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    
+
+
+}

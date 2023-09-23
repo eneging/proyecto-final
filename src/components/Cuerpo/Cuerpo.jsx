@@ -41,7 +41,7 @@ return(
   </div>  </div>
    
       <div className="card2-container">
-        <h2>Today’s Hightlights</h2>
+        <div><h2>Today’s Hightlights</h2></div>
         <div className="ctn-c2">
           <CardsP wind={viento} />  <Cards2 hum={humedad} />
         </div>

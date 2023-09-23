@@ -65,3 +65,25 @@ align-items: center;
    font-weight: 200;
 }
 
+
+@media (max-width:500px){
+
+    .container-card-1 > *{
+
+       
+height: 27vh;
+width: 30vw;
+display: flex;
+gap: 1rem;
+
+    }
+
+
+    .container-card-1{
+    gap:2rem;
+        height: 90vh;
+        width: 80%;
+        flex-wrap: wrap;
+        
+    }
+}
