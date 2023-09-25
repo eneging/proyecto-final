@@ -9,10 +9,16 @@ import "./Cuerpo.css"
 import './Cards1.css'
 
 
+
+
+
 function Cuerpo({ humedad, viento, presion, fell, misDatosCard1  }) {
 
     const [mostrarC, setMostrar] = useState(true)
     const [mostrarf, setMostrarf] = useState(false)
+
+
+
 
   return (
     <div className="cuerpo">
@@ -30,11 +36,17 @@ function Cuerpo({ humedad, viento, presion, fell, misDatosCard1  }) {
 return(
 
      <div   className="cartas" id={`class-${i}`} key={i}>
-        <h3>{e.dt_txt.substr(0, 10)}</h3>
-          <img src={`https://openweathermap.org/img/wn/${e.weather[0].icon}@2x.png`}></img>
+
+
+
+        <h3>{new Date (e.dt_txt.substr(0, 10)) .toGMTString( ).substr(0,12) }</h3>
+
+         <img src={`https://openweathermap.org/img/wn/${e.weather[0].icon}@2x.png`}></img>
+            
             <div className="Temperatura"> {mostrarC ? <h3>{Math.trunc(e.main.temp_max - 273.15)}<h4>°C</h4></h3>: null}
                {mostrarf ? <h3>{Math.trunc((e.main.temp_max - 273.15 )* 9/5 + 32)}<h4>°F</h4></h3>: null}
                {mostrarC ? <h3>{Math.trunc(e.main.temp_min - 273.15)}<h4>°C</h4></h3>:null}  {mostrarf ? <h3>{Math.trunc((e.main.temp_min - 273.15 )* 9/5 + 32)}<h4>°F</h4></h3>: null}   </div>
+          
            </div>
     )
 })}
