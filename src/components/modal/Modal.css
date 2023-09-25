@@ -254,7 +254,6 @@ cursor: pointer;
    
 
 
-
 .btn-gps{
 
     height: 10vw;
@@ -271,3 +270,24 @@ cursor: pointer;
 
 
 }
+
+
+
+@media (max-width:768px) {
+ 
+    .btn-gps{
+           
+     height: 1vh;
+
+   }
+
+   .nav{
+    border:solid;
+   
+
+} 
+
+
+
+}
+

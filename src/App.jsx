@@ -22,6 +22,7 @@ function App() {
   const addGPS = () => { setCiudadInput(citys); };
 
 
+/*console.log(new Date (data.list[0].dt_txt.substr(0, 10)) .toGMTString( ).substr(0,12) )*/
 
   useEffect(() => {
     const getData = async () => {
